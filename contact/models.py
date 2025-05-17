@@ -20,5 +20,7 @@ class Contact(models.Model):
     # owner = models.ForeignKey("app.Model", on_delete = models.CASCADE)
     # picture = models.ImageField(upload_to = None, height_field = None, width_field = None, max_length = None)
 
+    def __str__(self) -> str:
+        return f'{self.first_name} {self.last_name}'
 
 
